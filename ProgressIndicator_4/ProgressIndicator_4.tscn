@@ -1,0 +1,35 @@
+[gd_scene load_steps=15 format=1]
+
+[ext_resource path="res://ProgressIndicator_4/gfx/1.png" type="Texture" id=1]
+[ext_resource path="res://ProgressIndicator_4/gfx/2.png" type="Texture" id=2]
+[ext_resource path="res://ProgressIndicator_4/gfx/3.png" type="Texture" id=3]
+[ext_resource path="res://ProgressIndicator_4/gfx/4.png" type="Texture" id=4]
+[ext_resource path="res://ProgressIndicator_4/gfx/5.png" type="Texture" id=5]
+[ext_resource path="res://ProgressIndicator_4/gfx/6.png" type="Texture" id=6]
+[ext_resource path="res://ProgressIndicator_4/gfx/7.png" type="Texture" id=7]
+[ext_resource path="res://ProgressIndicator_4/gfx/8.png" type="Texture" id=8]
+[ext_resource path="res://ProgressIndicator_4/gfx/9.png" type="Texture" id=9]
+[ext_resource path="res://ProgressIndicator_4/gfx/10.png" type="Texture" id=10]
+[ext_resource path="res://ProgressIndicator_4/gfx/11.png" type="Texture" id=11]
+[ext_resource path="res://ProgressIndicator_4/gfx/12.png" type="Texture" id=12]
+[ext_resource path="res://ProgressIndicator_4/gfx/13.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="ProgressIndicator_4" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+frames = SubResource( 1 )
+animation = "default"
+frame = 6
+playing = true
+
+

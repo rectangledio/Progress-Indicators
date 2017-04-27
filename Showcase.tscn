@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://ProgressIndicator_1/ProgressIndicator_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ProgressIndicator_2/ProgressIndicator_2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ProgressIndicator_3/ProgressIndicator_3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ProgressIndicator_4/ProgressIndicator_4.tscn" type="PackedScene" id=4]
 
 [node name="Showcase" type="Node"]
 
@@ -17,5 +18,10 @@ transform/pos = Vector2( 32.8802, 183.65 )
 [node name="ProgressIndicator_3" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 333.945, 184.161 )
+
+[node name="ProgressIndicator_4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 184.549, 67.668 )
+transform/scale = Vector2( 0.5, 0.5 )
 
 
